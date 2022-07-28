@@ -15,22 +15,15 @@ import javax.validation.constraints.Pattern;
 public class BanImport {
 
     @ExcelCellName("MaBan")
-    @NotEmpty(message = "Ma Ban Trong !")
     private String maBan;
 
     @ExcelCellName("SoBan")
-    @NotEmpty(message = "So Ban Trong !")
-    @Min(value = 0)
     private Integer soBan;
 
     @ExcelCellName("SoNguoi")
-    @NotEmpty(message = "So Nguoi Trong !")
     @Min(value = 0)
     private Integer soNguoi;
 
     @ExcelCellName("TrangThai")
-    @NotEmpty(message = "Trang Thai Ban Trong !")
-    @Pattern(regexp = "^0$|1$",
-            message = "Trang Thai Bat Dau Bang 0 Hoac 1")
-    private int trangThai;
+    private String trangThai;
 }

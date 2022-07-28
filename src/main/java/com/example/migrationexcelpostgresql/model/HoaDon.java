@@ -20,13 +20,13 @@ public class HoaDon {
     private Integer id;
 
     @Column(name = "IDHD", nullable = false)
-    @Pattern(regexp = "^HD-*",
-            message = "Ma Hoa Don Phải Bat Dau Bang NV-")
+//    @Pattern(regexp = "^HD-*",
+//            message = "Ma Hoa Don Phải Bat Dau Bang NV-")
     private String maHD;
 
     @Column(name = "ngay_HD", nullable = false)
-    @Pattern(regexp = "^([0-2][0-9]|(3)[0-1])(\\/)(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$",
-            message = "Ngay Lap Hoa Don Phai Dung Dinh Dang dd/mm/yyyy")
+//    @Pattern(regexp = "^([0-2][0-9]|(3)[0-1])(\\/)(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$",
+//            message = "Ngay Lap Hoa Don Phai Dung Dinh Dang dd/mm/yyyy")
     private String ngayHD;
 
     @Column(name = "thanh_tien", nullable = false)
@@ -44,14 +44,4 @@ public class HoaDon {
     @JsonManagedReference
     @JoinColumn(name = "NV_id")
     NhanVien nhanVien;
-
-    @ManyToOne
-    @JsonManagedReference
-    @JoinColumn(name = "ban_id")
-    Ban ban;
-
-    @ManyToOne
-    @JsonManagedReference
-    @JoinColumn(name = "menu_id")
-    Menu menu;
 }

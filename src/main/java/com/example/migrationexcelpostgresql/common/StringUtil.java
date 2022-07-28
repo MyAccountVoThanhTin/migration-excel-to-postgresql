@@ -10,4 +10,8 @@ public class StringUtil {
     public static boolean isEmpty(String strValue) {
         return Objects.isNull(strValue) || StringUtil.EMPTY.equals(strValue.trim());
     }
+
+    public static Integer convertSex(String nameSex){
+        return nameSex.equals("Nam") ?  0 : 1;
+    }
 }

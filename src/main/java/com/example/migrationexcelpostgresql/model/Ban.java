@@ -27,7 +27,7 @@ public class Ban {
     private Integer soNguoi;
 
     @Column(name = "trang_thai", nullable = false)
-    @Pattern(regexp = "^0$|1$",
-            message = "Trang Thai Bat Dau Bang 0 Hoac 1")
-    private int trangThai;
+//    @Pattern(regexp = "^0$|1$",
+//            message = "Trang Thai Bat Dau Bang 0 Hoac 1")
+    private String trangThai;
 }

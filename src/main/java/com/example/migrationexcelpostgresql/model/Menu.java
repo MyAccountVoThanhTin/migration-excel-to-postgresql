@@ -19,8 +19,8 @@ public class Menu {
     private Integer id;
 
     @Column(name = "IDMon", nullable = false)
-    @Pattern(regexp = "^M-*",
-            message = "Ma Mon Phải Bat Dau Bang M-")
+//    @Pattern(regexp = "^M-*",
+//            message = "Ma Mon Phải Bat Dau Bang M-")
     private String maMon;
 
     @Column(name = "ten_mon", nullable = false)

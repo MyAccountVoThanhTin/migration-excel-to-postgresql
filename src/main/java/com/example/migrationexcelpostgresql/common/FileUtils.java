@@ -19,9 +19,9 @@ public class FileUtils {
         try {
             byte[] decodedBytes = Base64.getDecoder().decode(base64String);
             if (Objects.isNull(outputFileName)) {
-                file = File.createTempFile("uploadFileToS3_", StringUtil.EMPTY);
+                file = File.createTempFile("uploadFileToS3_", ".xlsx");
             } else {
-                file = new File(outputFileName);
+                file = File.createTempFile(outputFileName, ".xlsx");
             }
             writeByte(decodedBytes, file);
         } catch (IOException e) {

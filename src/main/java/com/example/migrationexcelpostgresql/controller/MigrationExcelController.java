@@ -4,7 +4,6 @@ import com.example.migrationexcelpostgresql.common.ResponseEntityUtil;
 import com.example.migrationexcelpostgresql.common.StringUtil;
 import com.example.migrationexcelpostgresql.dto.ImportExcelFileDTO;
 import com.example.migrationexcelpostgresql.service.FileManagerService;
-import jdk.nashorn.internal.runtime.GlobalConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

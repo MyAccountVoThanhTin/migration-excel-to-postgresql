@@ -32,6 +32,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation group: 'com.github.ozlerhakan', name: 'poiji', version: '3.1.1'
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.4.4'
 }
 
 tasks.named('test') {
